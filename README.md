@@ -1,6 +1,6 @@
 # 工程简介
 
-
+原博文：登录CSDN，SpringCloud收藏夹，打开“maven多模块构建springcloud项目”
 
 # 延伸阅读
 
