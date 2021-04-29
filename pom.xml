@@ -22,6 +22,7 @@
         <module>eureka_feign</module>
         <module>spring_kafka_producer</module>
         <module>spring_kafka_consumer</module>
+        <module>springboot_redis</module>
     </modules>
 
     <!--统一管理版本-->
@@ -45,10 +46,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
@@ -97,7 +94,18 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.5</version>
             </plugin>
+            <!--maven打包时跳过单元测试 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.8.1</version>
+                <configuration>
+                    <skip>true</skip> <!-- maven打包时跳过单元测试。。打包时不会把Test类及@Test修饰的方法执行一遍 -->
 
+                    <!--只是忽略编译单元测试类的错误。打包时也会把Test类及@Test修饰的方法执行一遍-->
+                    <!--<testFailureIgnore>true</testFailureIgnore>-->
+                </configuration>
+            </plugin>
             <!--            <plugin>-->
             <!--                <groupId>org.apache.maven.plugins</groupId>-->
             <!--                <artifactId>maven-resources-plugin</artifactId>-->
