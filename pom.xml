@@ -23,6 +23,7 @@
         <module>spring_kafka_producer</module>
         <module>spring_kafka_consumer</module>
         <module>springboot_redis</module>
+        <module>springboot_annotate</module>
     </modules>
 
     <!--统一管理版本-->
