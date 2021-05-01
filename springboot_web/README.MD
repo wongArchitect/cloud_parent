@@ -1,3 +1,29 @@
+参考网页
+
+
+   Controller层统一响应(Json格式)处理过程： 
+    
+        https://blog.csdn.net/whos2016/article/details/104808155
+    
+   springboot之全局异常拦截器： 
+        
+        https://blog.csdn.net/qq_36922927/article/details/82026683
+
+
+1、实现方法：通常情况我们在Controller层进行返回数据时候，对具体的业务数据要再次包装一下返回
+      
+      加注解来实现包装：@ControllerAdvice
+
+2、已经实现的基础上额外包装：响应格式控制拦截器 ResponseFormatJsonInterceptor
+
+        自定义注解使返回更简洁
+        
+3、全面些：统一异常处理，Exception异常类的包装。
+
+        ExceptionAdviceHandler
+
+
+
 Lombok注解-@SneakyThrows
 
     1、Lombok的@SneakyThrows就是为了消除下面这样的模板代码。使用注解后不需要担心Exception的处理

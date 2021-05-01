@@ -26,6 +26,7 @@ public class TestController {
     @SneakyThrows //Lombok注解-@SneakyThrows,省去繁琐的try-catch.
     @GetMapping("/hello")
 //    @ResponseJsonFormat
+    //如果不是ResponseJson类型，则在ResponseJsonFormatHandler中转为ResponseJson类型，并可以代替controller中方法的返回类型，把ResponseJson写入ResponseBody并相应到前端。
     public String sayHello() {
         log.info("进入方法...");
 //        tess();
@@ -38,6 +39,7 @@ public class TestController {
 
 //   添加全局异常处理器后，controller方法是这样的：无业务逻辑
     //由于各种null，以及密码不正确等问题都在service抛出GlobalException，这里自然只能得到true
+    //如果不是ResponseJson类型，则在ResponseJsonFormatHandler中转为ResponseJson类型，并可以代替controller中方法的返回类型，把ResponseJson写入ResponseBody并相应到前端。
     @GetMapping("/login")
 //    public ResponseJson doLogin(@Valid LoginVal loginVal){
     public ResponseJson doLogin(@Valid LoginVal loginVal){
@@ -48,6 +50,7 @@ public class TestController {
         log.info(loginVal.toString());
         userService.login(loginVal);
 //由于各种null，以及密码不正确等问题都在service抛出GlobalException，这里自然只能得到true
+        //返回值为controller方法的返回类型
         return ResponseJson.ok();
     }
 }

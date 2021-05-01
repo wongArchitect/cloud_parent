@@ -35,6 +35,8 @@ public class ResponseJsonFormatHandler implements ResponseBodyAdvice<Object> {
     }
 
     @Override
+//    把ResponseJson写入ResponseBody并相应到前端。
+    //如果不是ResponseJson类型，则转为ResponseJson类型，并可以代替controller中方法的返回类型，把ResponseJson写入ResponseBody并相应到前端。
     public Object beforeBodyWrite(Object o, MethodParameter methodParameter,
                                   MediaType mediaType,
                                   Class<? extends HttpMessageConverter<?>> aClass,

@@ -18,6 +18,7 @@ public class ExceptionAdviceHandler {
      */
     @ExceptionHandler(value = RuntimeException.class)
     @ResponseBody
+    //执行后执行ResponseJsonFormatHandler类的包装方法
     public ResponseJson handle(RuntimeException e) {
         log.info("RuntimeException异常或其子类异常捕获：{}", e.getMessage());
 
