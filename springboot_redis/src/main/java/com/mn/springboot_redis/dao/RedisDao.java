@@ -5,8 +5,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Repository;
 
-import java.util.concurrent.TimeUnit;
-
 /**
  * @Description:
  * @Author: jiangfan

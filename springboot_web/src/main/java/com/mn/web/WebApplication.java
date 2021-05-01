@@ -1,13 +1,13 @@
-package com.mn.kafka.producer;
+package com.mn.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaProducerApplication {
+public class WebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KafkaProducerApplication.class, args);
+        SpringApplication.run(WebApplication.class, args);
     }
 
 }
