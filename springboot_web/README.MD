@@ -23,6 +23,13 @@
         ExceptionAdviceHandler
 
 
+4、注：Idea 的 REST Client窗口
+
+    打开 idea  ==>Toos ==> HTTP Client ==> Test RESTful Web Service
+
+
+
+其他
 
 Lombok注解-@SneakyThrows
 
