@@ -7,9 +7,9 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-//@Controller
-//@SpringBootApplication
-//@EnableTransactionManagement
+@Controller
+@SpringBootApplication
+@EnableTransactionManagement
 public class BootMain extends SpringBootServletInitializer {
 
     @Override

@@ -16,8 +16,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
-//@Configuration
-//@MapperScan(basePackages = "com.bert.mapper.master2", sqlSessionTemplateRef = "master2SqlSessionTemplate")
+@Configuration
+@MapperScan(basePackages = "com.mn.trans.dao", sqlSessionTemplateRef = "master2SqlSessionTemplate")
 public class DataSource2Config {
 
     @Bean(name = "master2DataSource")
@@ -32,7 +32,7 @@ public class DataSource2Config {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
         bean.setMapperLocations(
-                new PathMatchingResourcePatternResolver().getResources("classpath:mapper/master2/*.xml"));
+                new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml"));
 
         // 分页拦截器-begin
 //        PageInterceptor pageHelper = new PageInterceptor();
