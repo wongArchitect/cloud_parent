@@ -1,7 +1,6 @@
 package com.mn.trans.dao;
 
 import com.mn.trans.pojo.TblAccount;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 //@Mapper

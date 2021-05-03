@@ -1,7 +1,8 @@
 package com.mn.trans.pojo;
 
-import java.io.Serializable;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * tbl_account

@@ -154,7 +154,7 @@
    2、启动类的配置
        
        @SpringBootApplication 
-            等价于 
+            当前子模块中等价于 
        @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
        @EnableAutoConfiguration
        

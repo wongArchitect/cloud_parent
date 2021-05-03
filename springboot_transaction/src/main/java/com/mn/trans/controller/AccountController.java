@@ -23,4 +23,26 @@ public class AccountController {
             return "转账失败";
         }
     }
+
+    @RequestMapping("/transferForResouces1")
+    public Object transferForResouces1() {
+        try {
+            // andy 给lucy转账50元
+            return accountService.prod();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "test fail ...";
+        }
+    }
+
+    @RequestMapping("/transferForResouces2")
+    public Object transferForResouces2() {
+        try {
+            // andy 给lucy转账50元
+            return accountService.dev();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "test fail ...";
+        }
+    }
 }
