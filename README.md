@@ -89,4 +89,16 @@
         git revert HEAD
 
    4、一般用户，Git提交的单个文件不得大于100M。
+   
 
+三、@Scheduled注解：定时任务
+
+           1、 入口程序ScheduledApplication添加注解@EnableScheduling
+           
+           2、创建定时任务类添加@Compoment注解将类纳入spring bean管理
+           
+           3、创建方法添加@Scheduled注解配置cron定时属性
+           
+        注： 属于spring框架的功能，引入基础的spring包或springboot包即可。
+        
+        
