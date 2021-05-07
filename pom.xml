@@ -28,6 +28,7 @@
         <module>springboot_transaction</module>
         <module>springboot_web</module>
         <module>spring_threads</module>
+        <module>springboot_application_demo</module>
     </modules>
 
     <!--统一管理版本-->
