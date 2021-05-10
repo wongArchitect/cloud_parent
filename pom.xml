@@ -29,6 +29,7 @@
         <module>springboot_web</module>
         <module>spring_threads</module>
         <module>springboot_application_demo</module>
+        <module>springbootConfig</module>
     </modules>
 
     <!--统一管理版本-->
