@@ -30,6 +30,8 @@
         <module>spring_threads</module>
         <module>springboot_application_demo</module>
         <module>springbootConfig</module>
+        <module>springbootConsumerFeign</module>
+        <module>springbootConsumerRibbon</module>
     </modules>
 
     <!--统一管理版本-->
