@@ -21,7 +21,7 @@
         springCloud管理的是uri（URL）和属性文件等。
 
 
-三、 总结一下SpringCloud结果核心组件:
+二、 总结一下SpringCloud结果核心组件:
    
            Eureka:服务发现。
                 个服务启动时,Eureka会将服务注册到EurekaService,并且EurakeClient还可以返回过来从EurekaService拉去注册表,从而知道服务在哪里
@@ -41,8 +41,29 @@
         注：原博文地址
        
                 https://blog.csdn.net/weixin_35650916/article/details/103871946
+                
+三、springboot启动
 
-二、git 使用 积累
+        博文地址：
+                https://blog.csdn.net/u010811939/article/details/80592461
+                
+     1、流程描述：    
+        
+        构造SpringApplication的实例（时序图步骤1-2）
+        调用SpringApplication.run()方法（时序图步骤3）
+        构造SpringApplicationRunListeners 实例（时序图步骤3.1.1）
+        发布ApplicationStartedEvent事件（时序图步骤3.1.2）
+        SpringApplicationRunListeners 实例准备环境信息（时序图步骤3.1.3）
+        创建ApplicationContext对象（时序图步骤3.1.4）
+        ApplicationContext实例准备环境信息（时序图步骤3.1.5）
+        刷新的上下文（时序图步骤3.1.6）
+
+     2、在doc文件夹中有“时序图”。
+     
+            doc/springboot/springboot启动流程.png               
+                        
+
+四、git 使用 积累
  
      git 取消提交（add）操作、未pull便push的bug、git取消修改，恢复版本 命令大全
      
