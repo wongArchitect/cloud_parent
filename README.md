@@ -42,12 +42,12 @@
        
                 https://blog.csdn.net/weixin_35650916/article/details/103871946
                 
-三、springboot启动
+三、springboot启动流程
 
         博文地址：
                 https://blog.csdn.net/u010811939/article/details/80592461
                 
-     1、流程描述：    
+     1、流程描述：SpringApplication的实例与run()方法、监听、事件、环境信息、上下文。    
         
         构造SpringApplication的实例（时序图步骤1-2）
         调用SpringApplication.run()方法（时序图步骤3）
