@@ -9,7 +9,7 @@
             SpringMVC框架是一个基于请求驱动的Web框架，并且使用了‘前端控制器’模型来进行设计，再根据‘请求映射规则’分发给相应的页面控制器进行处理。
         
         注：清晰的角色划分
-            前端控制器（DispatcherServlet）、请求到处理器映射（HandlerMapping）、处理器适配器（HandlerAdapter）、视图解析器（ViewResolver）、
+            前端控制器（DispatcherServlet）、请求到映射处理器（HandlerMapping）、适配处理器（HandlerAdapter）、视图解析器（ViewResolver）、
             处理器或页面控制器（Controller）、验证器（ Validator）、命令对象（Command  请求参数绑定到的对象就叫命令对象）、
             表单对象（Form Object 提供给表单展示和提交到的对象就叫表单对象）。
      
