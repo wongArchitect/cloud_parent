@@ -65,4 +65,33 @@
            5）  处理器（页面控制器）的配置，从而进行功能处理 
        
    
-         注：View是一个接口，实现类支持不同的View类型（jsp、freemarker、pdf...）                  
+         注：View是一个接口，实现类支持不同的View类型（jsp、freemarker、pdf...）
+         
+         
+二、SpringMVC的三种处理器适配器
+
+            分别是：
+            
+                BeanNameUrlHandlerMapping、SimpleControllerHandlerAdapter、ControllerClassNameHandlerMapping
+        
+        1、BeanNameUrlHandlerMapping：
+                <!-- name为URL 即， name="/hello.do" --->
+                <bean id="userController" name="/hello.do" class="com.zk.UserController.UserController"></bean>
+            
+        2、SimpleControllerHandlerAdapter
+        
+                <!-- 配置处理器适配器:负责执行UserController,springMVC默认处理器适配器 -->
+                <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+                     <property name="mappings">
+                         <props>
+                             <prop key="/min.do">userController</prop>
+                             <prop key="/abc.do">userController</prop>
+                             <prop key="/ss.do">userController</prop>
+                         </props>
+                     </property>
+                </bean>   
+                   
+        3、  ControllerClassNameHandlerMapping  
+        
+                    <!-- 通过类名.do来访问，类名首字母小写 -->
+                    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"></bean>                                   
