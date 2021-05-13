@@ -32,6 +32,8 @@
         <module>springbootConfig</module>
         <module>springbootConsumerFeign</module>
         <module>springbootConsumerRibbon</module>
+        <module>foundation</module>
+        <module>java_foundation</module>
     </modules>
 
     <!--统一管理版本-->
