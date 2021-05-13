@@ -19,7 +19,7 @@
         GlobalExceptionHandler
 
 
-3、在springboot_web子项目中有对ResponseBody的包装：自定义注解使返回更简洁。
+3、在springboot_web子项目中有对ResponseBody的包装：使返回更简洁。
        
        已经实现的基础上额外包装：响应格式控制拦截器 ResponseFormatJsonInterceptor
        

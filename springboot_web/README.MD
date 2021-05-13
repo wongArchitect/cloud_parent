@@ -27,6 +27,11 @@
 
     打开 idea  ==>Toos ==> HTTP Client ==> Test RESTful Web Service
 
+5、SpringMVC的单例模式:单例中的ThreadLocal属性成员 ---> 把线程和线程对应的数据以k-v封装为ThreadLocalMap ---> v为数组
+
+    ThreadLocal 内部以Map<线程对象，数据>的key-value方式储存线程和数据，每个key（线程）线程对应的Value（数据）以数组存储，
+    从而每个线程以map的特性（key元素不可重复）互相隔离，value数据也因对应key来存储而不会混乱。
+    每个数组的下标以“hashCode与length位运算（取模）确定出一个索引值i”来定，并通过“反位运算”（反取模）来精确定位数据值。
 
 
 其他
