@@ -4,6 +4,8 @@ import com.ctc.wstx.util.StringUtil;
 import com.mn.web.common.CodeMsg;
 import com.mn.web.common.GlobalException;
 import com.mn.web.dom.LoginVal;
+import com.mn.web.dom.UserDto;
+import com.mn.web.emuncl.ResponseEnum;
 import org.springframework.stereotype.Service;
 
 /**
@@ -27,5 +29,12 @@ public class UserService {
             throw  new GlobalException(CodeMsg.MSG_PASSWORD_ERROR);
         }
         return true;
+    }
+
+    public void getUser(){
+        UserDto dto = new UserDto();
+        dto.setReturnType(ResponseEnum.RETURN_TYPE_BY_PHONE);
+
+        System.out.println(dto.getReturnType().getCode());
     }
 }

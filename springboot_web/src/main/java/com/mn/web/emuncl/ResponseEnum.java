@@ -25,12 +25,15 @@ public enum ResponseEnum {
     NETWORK_ERROR("network-err", "网络故障，请检查网络连接..."),
     BUSINESS_ERROR("business-err", "业务处理中，请稍后重试..."),
 
+    RETURN_TYPE_BY_PHONE("1", "手机登录"),
+
     /**
      * 通用的校验错误
      */
     ILLEGAL_ARGS_ERROR("args-illegal-err", "非法参数错误"),
     ARGS_PASSWORD_WRONG("password-format-err", "密码格式不正确"),
     ARGS_PHONE_WRONG("phone-format-err", "手机格式不正确"),
+
     ;
 
     private String code;
